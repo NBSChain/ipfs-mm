@@ -1,0 +1,13 @@
+# Compiled class file
+*.class
+
+# Log file
+*.lo
+
+# IDEA config
+*.impl
+*.iml
+.idea/
+
+# sub project
+ipfs-mm-client
