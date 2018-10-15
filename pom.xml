@@ -9,10 +9,47 @@
     <url>https://github.com/NBSChain/ipfs-mm</url>
 
     <properties>
+        <ipfs.version>v1.2.0</ipfs.version>
+
+        <logback.version>1.2.3</logback.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
     </properties>
 
     <modules>
-        <module>ipfs-mm-client</module>
+   <!--     <module>ipfs-mm-client</module>-->
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>UTF-8</encoding>
+                    <compilerArgument>-XDignore.symbol.file</compilerArgument>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
