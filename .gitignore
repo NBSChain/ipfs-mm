@@ -13,3 +13,7 @@
 ipfs-mm-client
 # sub sdk
 ipfs-mm-java-sdk
+
+## runtime dir
+logs
+.nbs
